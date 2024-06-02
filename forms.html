@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="1"
+          >First Name:<input
+            type="text"
+            name="First Name"
+            id="1"
+            required="required"
+        /></label>
+
+        <br /><br />
+
+        <label for="2"
+          >Last Name:<input
+            type="text"
+            name="Last Name"
+            id="2"
+            required="optional"
+        /></label>
+
+        <br /><br />
+
+        <label for="username"
+          >Date of Birth:
+          <input type="date" name="Date" required="required" id="username" />
+        </label>
+        <br />
+
+        <p>
+          <label>
+            Gender:
+            <select name="Gender" size="1" required="required">
+              <option value="Male" selected="selected">Male</option>
+              <option value="Female">Female</option>
+              <option value="Rather not say">Rather not say</option>
+              <option value="Custom">Custom</option>
+            </select>
+          </label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Account Information</legend>
+
+        <p>
+          <label for="3">
+            Email Address:
+            <input type="email" name="email" required="required" id="3"
+          /></label>
+          <br />
+          (your email address will be your username)
+        </p>
+        <p>
+          <label for="4">
+            Re-Write Email:
+            <input type="email" name="email" required="required" id="4"
+          /></label>
+        </p>
+
+        <p>
+          <label for="5">
+            Password:
+            <input type="password" name="password" required="required" id="5" />
+          </label>
+          <br />
+          (Min,8 character,1 number case-sensitive)
+        </p>
+        <p>
+          <label for="6">
+            Re-Write Password:
+            <input type="password" name="password" required="required" id="6" />
+          </label>
+        </p>
+
+        <label>
+          Security Question:
+          <select name="Security question" size="1" required="required">
+            <option value="security question" selected="selected">
+              Choose your security question
+            </option>
+            <option value="surname">what is your surname</option>
+            <option value="age">what is your age</option>
+            <option value="hobby">what is your hobby</option>
+            <option value="school name">what is your school name</option>
+          </select>
+        </label>
+        <br /><br />
+        <label>
+          Security Question:
+          <input type="text" name="security question" />
+          <br />
+          (not case-sensitive)
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Contact Information</legend>
+
+        <label>
+          Address:
+          <input type="text" name="addresss" />
+        </label>
+        <br /><br />
+        <label>
+          City:
+          <input type="text" name="city" />
+        </label>
+        <br /><br />
+        <label>
+          Country:
+          <select name="country" size="1" required="required">
+            <option value="country" selected="selected">
+              Choose your country
+            </option>
+            <option value="pakistan">Pakistan</option>
+            <option value="India">India</option>
+            <option value="Canada">Canada</option>
+            <option value="Turkey">Turkey</option>
+          </select>
+        </label>
+        <br /><br />
+        <label>
+          Zip-Code:
+          <input type="text" name="Zip-Code" placeholder="optional" />
+        </label>
+        <br /><br />
+        <p>
+          <label>
+            Phone Number:
+            <input type="text" name="phone number" />
+            Mobile:
+            <select name="mobile" size="1" required="required">
+              <option value="mobile" selected="selected">Mobile</option>
+              <option value="Whatsapp">Whatsapp</option>
+              <option value="ptcl">Ptcl</option>
+            </select>
+            <br />
+            (No spaces or dashes)
+          </label>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
